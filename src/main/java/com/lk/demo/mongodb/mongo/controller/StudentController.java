@@ -23,7 +23,7 @@ public class StudentController {
 
     @PostMapping(path = "create/student", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createStudent(@RequestBody Student student){
-        log.info("Request calling from controller| pass data : {}",student);
+        log.info("Request calling from controller| pass datas : {}",student);
         return studentSerivce.addStudent(student);
     }
 }
